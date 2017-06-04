@@ -7,12 +7,12 @@ using WpfApplication1.DataAccessLayer.Domains;
 
 namespace WpfApplication1.DataAccessLayer.Model
 {
-   public class CourseModel
+    public class CourseModel
     {
         public CourseModel(List<Course> course)
         {
             Course = course;
-        }          
+        }
         public List<Course> Course;
         public string test;
 

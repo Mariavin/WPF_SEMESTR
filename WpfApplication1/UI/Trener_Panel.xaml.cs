@@ -16,26 +16,26 @@ using WpfApplication1.BusinessFacade.Controls;
 namespace WpfApplication1.UI
 {
     /// <summary>
-    /// Логика взаимодействия для AdminPanel.xaml
+    /// Логика взаимодействия для Trener_Panel.xaml
     /// </summary>
-    public partial class AdminPanel : Window
+    public partial class Trener_Panel : Window
     {
         IControl Trener;
-        public AdminPanel(IControl trener)
+        public Trener_Panel(IControl trener)
         {
             InitializeComponent();
             Trener = trener;
         }
 
-        private void AddProgram_Click(object sender, RoutedEventArgs e)
+        private void button2_Click(object sender, RoutedEventArgs e)
         {
             //Создание нового окна.
-            AddingProgram winTool = new AddingProgram(Trener);
+                AddingProgram winTool = new AddingProgram(Trener);
             // Назначение текущего окна владельцем.
             winTool.Owner = this;
             // Отображение окна, принадлежащего окну-владельцу.
             winTool.Show();
-          
         }
+
     }
 }

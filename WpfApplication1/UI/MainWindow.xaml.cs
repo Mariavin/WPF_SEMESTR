@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 using WpfApplication1.BusinessFacade.Controls;
 using WpfApplication1.BusinessFacade.Services;
 using WpfApplication1.UI;
@@ -24,7 +11,6 @@ namespace WpfApplication1
     public partial class MainWindow : Window
     {
         AvtorizationControl avtorizationControl;
-        IControl user;
         public MainWindow()
         {
             avtorizationControl = new AvtorizationControl();
@@ -35,13 +21,13 @@ namespace WpfApplication1
         {
             var login = textbox2.Text;
             var pass = textbox1.Text;
-            user = avtorizationControl.Avtorize(login, pass);
+            var userControl = avtorizationControl.Avtorize(login, pass);
 
-            if (user is TrenerControl)
+            if (userControl is TrenerControl)
             {
-                AdminPanel winTool = new AdminPanel(user);
+
             }
-            else if (user is ClientControl)
+            else if (userControl is ClientControl)
             {
 
             }
@@ -54,13 +40,14 @@ namespace WpfApplication1
 
         private void button_Click_1(object sender, RoutedEventArgs e)
         {
-            //Создание нового окна.
-            AdminPanel winTool = new AdminPanel(user);
-            // Назначение текущего окна владельцем.
-            winTool.Owner = this;
-            // Отображение окна, принадлежащего окну-владельцу.
-            winTool.Show();
-            mainwindow.Visibility=Visibility.Hidden;
+           
+           // //Создание нового окна.
+           //// Trener_Panel winTool = new Trener_Panel();
+           // // Назначение текущего окна владельцем.
+           // winTool.Owner = this;
+           // // Отображение окна, принадлежащего окну-владельцу.
+           // winTool.Show();
+           // mainwindow.Visibility = Visibility.Hidden;
         }
     }
 }

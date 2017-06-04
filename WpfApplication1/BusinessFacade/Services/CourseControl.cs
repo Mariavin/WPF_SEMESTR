@@ -9,7 +9,7 @@ using WpfApplication1.DataAccessLayer.Domains;
 
 namespace WpfApplication1.BusinessFacade.Services
 {
-    public class CourseService
+    public class CourseControl
     {
         Connection connection = new Connection();
         CourseRepository courseRepository = new CourseRepository();

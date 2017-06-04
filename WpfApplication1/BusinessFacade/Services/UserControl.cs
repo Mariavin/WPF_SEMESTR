@@ -4,11 +4,11 @@ using WpfApplication1.DataAccessLayer.Domains;
 
 namespace WpfApplication1.BusinessFacade.Services
 {
-    public class UserService
+    public class UserControl
     {
         private static SqlConnection Con;
 
-        public UserService(SqlConnection con)
+        public UserControl(SqlConnection con)
         {
             Con = con;
         }
@@ -20,6 +20,5 @@ namespace WpfApplication1.BusinessFacade.Services
             IEnumerable<User> u = new LinkedList<User>();
             return u;
         }
-
     }
 }

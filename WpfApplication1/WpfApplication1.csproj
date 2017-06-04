@@ -57,6 +57,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BusinessFacade\Controls\ClientControl.cs" />
+    <Compile Include="BusinessFacade\Controls\IControl.cs" />
+    <Compile Include="BusinessFacade\Controls\TrenerControl.cs" />
+    <Compile Include="UI\Trener_Panel.xaml.cs">
+      <DependentUpon>Trener_Panel.xaml</DependentUpon>
+    </Compile>
     <Page Include="UI\AddingProgram.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -66,10 +72,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Diary.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UI\TrenerPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -84,11 +86,8 @@
     <Compile Include="BusinessFacade\Repository\CourseRepository.cs" />
     <Compile Include="BusinessFacade\Repository\ProgrammRepository.cs" />
     <Compile Include="BusinessFacade\Services\AutorizationControl.cs" />
-    <Compile Include="BusinessFacade\Controls\ClientControl.cs" />
-    <Compile Include="BusinessFacade\Controls\IControl.cs" />
-    <Compile Include="BusinessFacade\Controls\TrenerControl.cs" />
-    <Compile Include="BusinessFacade\Services\CourseService.cs" />
-    <Compile Include="BusinessFacade\Services\ProgrammService.cs" />
+    <Compile Include="BusinessFacade\Services\CourseControl.cs" />
+    <Compile Include="BusinessFacade\Services\ProgrammControl.cs" />
     <Compile Include="DataAccessLayer\Domains\Client.cs" />
     <Compile Include="DataAccessLayer\Domains\Course.cs" />
     <Compile Include="DataAccessLayer\Domains\Programm.cs" />
@@ -96,7 +95,7 @@
     <Compile Include="DataAccessLayer\Domains\User.cs" />
     <Compile Include="DataAccessLayer\Enums\Role.cs" />
     <Compile Include="BusinessFacade\Helpers\Connection.cs" />
-    <Compile Include="BusinessFacade\Services\UserService.cs" />
+    <Compile Include="BusinessFacade\Services\UserControl.cs" />
     <Compile Include="DataAccessLayer\Model\CourseModel.cs" />
     <Compile Include="UI\AddingProgram.xaml.cs">
       <DependentUpon>AddingProgram.xaml</DependentUpon>
@@ -107,13 +106,14 @@
     <Compile Include="UI\Diary.xaml.cs">
       <DependentUpon>Diary.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\TrenerPanel.xaml.cs">
-      <DependentUpon>TrenerPanel.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UI\Trener_Panel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

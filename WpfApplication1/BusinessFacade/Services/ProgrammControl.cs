@@ -8,7 +8,7 @@ using WpfApplication1.DataAccessLayer.Domains;
 
 namespace WpfApplication1.BusinessFacade.Services
 {
-    public class ProgrammService
+    public class ProgrammControl
     {
         ProgrammRepository programmRepository = new ProgrammRepository();
 

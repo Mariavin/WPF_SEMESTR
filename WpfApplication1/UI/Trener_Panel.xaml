@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication1.UI.Trener_Panel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1.UI"
+        mc:Ignorable="d"
+        Title="Trener_Panel" Height="208.901" Width="300">
+    <Grid>
+        <Button x:Name="button" Content="Открыть расписание" HorizontalAlignment="Left" Margin="37,33,0,0" VerticalAlignment="Top" Width="128" Height="30"/>
+        <Button x:Name="button1" Content="Открыть список групп" HorizontalAlignment="Left" Margin="37,68,0,0" VerticalAlignment="Top" Width="128" Height="30"/>
+        <Button x:Name="button2" Content="Создать программу" HorizontalAlignment="Left" Margin="37,104,0,0" VerticalAlignment="Top" Width="128" Height="30" Click="button2_Click"/>
+
+    </Grid>
+</Window>

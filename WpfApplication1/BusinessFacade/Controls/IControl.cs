@@ -9,7 +9,6 @@ namespace WpfApplication1.BusinessFacade.Controls
 {
     public interface IControl
     {
-        IEnumerable<Programm> GetProgramm(int idUser);
-
+        IEnumerable <Programm> GetProgramm(int User);
     }
 }

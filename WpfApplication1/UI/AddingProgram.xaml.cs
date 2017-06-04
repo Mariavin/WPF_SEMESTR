@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using WpfApplication1.BusinessFacade.Controls;
 using WpfApplication1.BusinessFacade.Services;
 using WpfApplication1.DataAccessLayer.Domains;
@@ -23,8 +12,8 @@ namespace WpfApplication1.UI
     /// </summary>
     public partial class AddingProgram : Window
     {
-        CourseService courseService = new CourseService();
-        ProgrammService ProgrammService = new ProgrammService();
+        CourseControl courseService = new CourseControl();
+        ProgrammControl ProgrammService = new ProgrammControl();
         TrenerControl trener;
         public AddingProgram(IControl user)
         {

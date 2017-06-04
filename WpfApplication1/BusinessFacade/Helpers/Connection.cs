@@ -85,7 +85,8 @@ namespace WpfApplication1.BusinessFacade.Helpers
                     var student = new User(
                         Convert.ToInt32(sqlDataReader["id_user"].ToString()),
                         sqlDataReader["Login"].ToString(),
-                        sqlDataReader["Passwod"].ToString());
+                        sqlDataReader["Passwod"].ToString(),
+                        Convert.ToInt32(sqlDataReader["Role"].ToString()));
                     students.Add(student);
                 }
             }
